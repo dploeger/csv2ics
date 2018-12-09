@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Tell something about your typescript module.
+Convert a CSV file into an ICS calendar.
+
+(Currently WIP)
 
 ## Header map
 
@@ -12,11 +14,11 @@ The header map is a comma separated list of strings that specify the matching IC
 
 These mappings are detected:
 
-* SUMMARY
-* DTSTART
-* DTEND
-* DESCRIPTION
-* LOCATION
+-   SUMMARY
+-   DTSTART
+-   DTEND
+-   DESCRIPTION
+-   LOCATION
 
 ## Building
 
