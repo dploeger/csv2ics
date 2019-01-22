@@ -24,8 +24,9 @@
             "type": "node",
             "request": "launch",
             "name": "Programm starten",
-            "program": "${workspaceFolder}/lib/csv.ts",
-            "outFiles": ["${workspaceFolder}/**/*.js"]
+            "program": "${workspaceFolder}/index.js",
+            "args": ["test/fixtures/test.csv", "-h"],
+            "preLaunchTask": "build"
         }
     ]
 }
