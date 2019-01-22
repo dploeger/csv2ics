@@ -4,8 +4,6 @@
 
 Convert a CSV file into an ICS calendar.
 
-(Currently WIP)
-
 ## Header map
 
 csv2ics needs to know which columns are mapped to which ICAL properties. This can not be easily specified through CSV headers, so we rely on the header map.
@@ -19,6 +17,33 @@ These mappings are detected:
 -   DTEND
 -   DESCRIPTION
 -   LOCATION
+
+## Usage
+
+Install csv2ics using npm:
+
+    npm install -g csv2ics
+
+Run it using
+
+    csv2ics <input file.csv> <output file.ics>
+
+Input and output files are optional. If only one file is specified, it is used as an input file. If no file is specified, CSV data is taken from the STDIN.
+
+For option help, use
+
+    csv2ics --help
+
+# Options
+
+Supported options with defaults are:
+
+-   -d, --delimiter \<delimiter\> - Delimiter used in CSV-file [,]
+-   -h, --headers - CSV file has headers
+-   -m, --header-map \<headerMap\> - A map of headers to ical properties [SUMMARY,DTSTART,DTEND,* DESCRIPTION,LOCATION]
+-   --calendar-name \<calendarName\> - Name of calendar [My Calendar]
+-   --timezone \<timezone\> - Timezone-ID of the dates of the calendar [UTC]
+-   --dateformat \<dateformat\> - Date/Time-Format in CSV (see [https://momentjs.com/docs/#/parsing/string-format/](https://momentjs.com/docs/#/parsing/string-format/)) [YYYY-MM-DD HH:mm:ss]
 
 ## Building
 

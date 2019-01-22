@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { CLI, Shim } from 'clime'
 import * as Path from 'path'
 
