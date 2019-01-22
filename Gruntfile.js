@@ -74,6 +74,11 @@ module.exports = function(grunt) {
                 dir: 'test/coverage/reports',
                 print: 'detail'
             }
+        },
+        coveralls: {
+            default: {
+                src: 'test/coverage/reports/lcov.info'
+            }
         }
     })
 
@@ -84,6 +89,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('remap-istanbul')
     grunt.loadNpmTasks('grunt-contrib-clean')
     grunt.loadNpmTasks('grunt-contrib-copy')
+    grunt.loadNpmTasks('grunt-coveralls')
 
     grunt.registerTask('build', ['tslint', 'ts'])
 
