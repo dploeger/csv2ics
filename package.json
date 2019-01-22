@@ -10,6 +10,7 @@
     "bin": {
         "csv2ics": "./index.js"
     },
+    "homepage": "https://github.com/dploeger/csv2ics",
     "author": "Dennis Ploeger <develop@dieploegers.de>",
     "license": "MIT",
     "repository": {
