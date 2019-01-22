@@ -1,6 +1,6 @@
 # csv2ics - Convert CSV files into ICS calendars
 
-![https://www.npmjs.com/package/csv2ics](https://img.shields.io/npm/v/csv2ics.svg) [![Build Status](https://travis-ci.org/dploeger/csv2ics.svg?branch=master)](https://travis-ci.org/dploeger/csv2ics) [![Coverage Status](https://coveralls.io/repos/github/dploeger/csv2ics/badge.svg?branch=master)](https://coveralls.io/github/dploeger/csv2ics?branch=master)
+[![NPM version](https://img.shields.io/npm/v/csv2ics.svg)](https://www.npmjs.com/package/csv2ics) [![Build Status](https://travis-ci.org/dploeger/csv2ics.svg?branch=master)](https://travis-ci.org/dploeger/csv2ics) [![Coverage Status](https://coveralls.io/repos/github/dploeger/csv2ics/badge.svg?branch=master)](https://coveralls.io/github/dploeger/csv2ics?branch=master)
 
 ## Introduction
 
