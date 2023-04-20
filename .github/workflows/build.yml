@@ -32,7 +32,7 @@ jobs:
           go-version: "1.20"
 
       - name: Build
-        run: go build -o icarus cmd/icarus.go
+        run: go build -o csv2ics cmd/csv2ics.go
 
       - name: Release file
         uses: djnicholson/release-action@v2.10
@@ -40,5 +40,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-name: ${{ github.event.release.name }}
           tag-name: ${{ github.event.release.tag_name }}
-          asset-name: icarus-${{ matrix.goos }}-${{ matrix.goarch }}
-          file: icarus
+          asset-name: csv2ics-${{ matrix.goos }}-${{ matrix.goarch }}
+          file: csv2ics
